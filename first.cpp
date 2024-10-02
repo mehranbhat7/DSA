@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-    cout << "Mehran\n" "BHat\n";
+    int age = 45;
+    char grade = 'A';
+    cout << sizeof(grade) ;
     return 0;
 }
