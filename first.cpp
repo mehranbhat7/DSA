@@ -1,15 +1,14 @@
 #include <iostream>
 using namespace std;
 int main(){
-   char grade = 'h';
-    int price = grade;
-    cout << price << endl;
+    int age;
+    cout << "please enter your age ! "<< endl;
+    cin >> age ;
+    cout << " your age is :" << age << endl;
 
-    double distance = 234.987;
-    int prices = distance;
-    cout << prices << endl;
-
+    int distance ;
+    cout << "what is the distanec from srinagar to jammu\n";
+    cin >> distance;
+    cout <<"the total distanec is :" << distance << endl;
     return 0;
 }
-
-
