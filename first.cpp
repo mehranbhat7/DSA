@@ -15,15 +15,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-   int a = 9, b = 5;
-   
-   cout << a + b << endl;
-   cout << a - b << endl;
-   cout << a * b << endl;
-   cout << a / b << endl;
-
-   cout << (5 != 5) << endl;
-cout << !(10 > 12) << endl;
-cout << ((8 > 7) && (10 < 20)) << endl;
+int a = 4;
+cout << (++a) << endl;
+cout << a << endl;
     return 0;
 }
