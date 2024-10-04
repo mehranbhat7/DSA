@@ -55,31 +55,45 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+// int marks ;
+// cout << "enter your marks obtained\n";
+// cin >> marks;
+// if(marks >= 90){
+//     cout << "grade A\n";
+// }else if(marks >= 80 && marks <= 90 ){
+//     cout << "grade B\n";
+// }else if(marks >= 50 && marks <= 80){
+//     cout << "grade C\n";
+// }else{
+//     cout << "fail\n";
+// }
+// char a ;
+// cout << "enter :\n";
+// cin >> a;
+// if((a >= 'a' && a <= 'z')){
+//     cout << "lowercase\n";
+// }else{
+//     cout << "uppercase\n";
+// }
+// int a = 17;
+// a > 10 ? cout << "good\n" :cout << "bad\n";
+// return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 int main(){
-int marks ;
-cout << "enter your marks obtained\n";
-cin >> marks;
-if(marks >= 90){
-    cout << "grade A\n";
-}else if(marks >= 80 && marks <= 90 ){
-    cout << "grade B\n";
-}else if(marks >= 50 && marks <= 80){
-    cout << "grade C\n";
-}else{
-    cout << "fail\n";
+    int count = 1;
+    int num ;
+    cout << "Enter any number\n";
+    cin >> num;
+    while(count <= num){
+        cout << count << " ";
+        count++;
+    }
+    return 0;
 }
-char a ;
-cout << "enter :\n";
-cin >> a;
-if((a >= 'a' && a <= 'z')){
-    cout << "lowercase\n";
-}else{
-    cout << "uppercase\n";
-}
-int a = 17;
-a > 10 ? cout << "good\n" :cout << "bad\n";
-return 0;
-}
-
