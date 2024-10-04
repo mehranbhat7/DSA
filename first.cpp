@@ -84,16 +84,29 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int count = 1;
+//     int num ;
+//     cout << "Enter any number\n";
+//     cin >> num;
+//     while(count <= num){
+//         cout << count << " ";
+//         count++;
+//     }
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 int main(){
-    int count = 1;
-    int num ;
-    cout << "Enter any number\n";
-    cin >> num;
-    while(count <= num){
-        cout << count << " ";
-        count++;
-    }
+    int n ;
+    cout << "enter:\n";
+    cin >> n;
+   for(int i = 0;i<=n;i++){
+    cout << i << " ";
+   }
     return 0;
 }
