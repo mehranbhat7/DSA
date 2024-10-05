@@ -171,20 +171,33 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int n = 9;
+ 
+//  for(int i = 2; i <= (n-1); i++){
+//   if(n % i == 0){
+//     cout << n << " is not a prime number.\n";
+//     return 0;
+//   }else{
+//     cout << n << " is a prime number.\n";
+//     break;
+//   }
+//  }
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main(){
-  int n = 9;
- 
- for(int i = 2; i <= (n-1); i++){
-  if(n % i == 0){
-    cout << n << " is not a prime number.\n";
-    return 0;
-  }else{
-    cout << n << " is a prime number.\n";
-    break;
+  for(int i = 1; i <= 10; i++){
+  
+  for(int i = 1; i <=5; i++){
+    cout << "*";
   }
- }
+  cout << endl;
+  }
+  
   return 0;
 }
-
