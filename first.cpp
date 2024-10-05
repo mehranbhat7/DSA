@@ -110,30 +110,66 @@
 //    }
 //     return 0;
 // }
-#include <iostream>
-using namespace std;
-int main(){
-  int num = 50;
-  int count = 1;
-  int sum = 0;
-  for(count = 0; count <= num; count++){
-   sum = sum + count;
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int num = 50;
+//   int count = 1;
+//   int sum = 0;
+//   for(count = 0; count <= num; count++){
+//    sum = sum + count;
  
-  }
-    cout<< sum << endl;
+//   }
+//     cout<< sum << endl;
   
-    return 0;
-}
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int n = 15;
+//   int i = 1;
+//   int sum = 0;
+//   while(i<=n){
+//     sum = sum + i;
+//     i++;
+//   }
+//   cout<< sum <<endl;
+//     return 0;
+// }
 #include <iostream>
 using namespace std;
 int main(){
-  int n = 15;
-  int i = 1;
-  int sum = 0;
-  while(i<=n){
+  int n = 10;
+int i = 0;
+int sum = 0;
+while(i <= n){
+  if(i % 2 == 0){
     sum = sum + i;
-    i++;
   }
-  cout<< sum <<endl;
+  i++;
+}
+cout << sum << endl;
     return 0;
 }
+
+
+  // int n = 10;
+  // int sum = 0;
+  
+  // for (int i = 0; i <= n; i++){
+  //   if(i % 2 != 0){
+  //       cout << i << endl;
+  //       sum = sum + i;
+  //   }
+  // }
+  // cout << sum << endl;
+
+
+
+
+
+
+
+
+
