@@ -188,16 +188,29 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   for(int i = 1; i <= 20; i++){
+  
+//   for(int i = 1; i <=35; i++){
+//     cout << "*";
+//   }
+//   cout << endl;
+//   }
+  
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main(){
-  for(int i = 1; i <= 10; i++){
-  
-  for(int i = 1; i <=5; i++){
-    cout << "*";
-  }
-  cout << endl;
-  }
-  
+ int n = 5;
+ int sum = 1;
+ for(int i = 1; i<=n; i++){
+  sum = sum * i;
+
+ }
+ cout << sum << endl;
   return 0;
 }
