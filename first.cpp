@@ -99,14 +99,41 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n ;
+//     cout << "enter:\n";
+//     cin >> n;
+//    for(int i = 0;i<=n;i++){
+//     cout << i << " ";
+//    }
+//     return 0;
+// }
 #include <iostream>
 using namespace std;
 int main(){
-    int n ;
-    cout << "enter:\n";
-    cin >> n;
-   for(int i = 0;i<=n;i++){
-    cout << i << " ";
-   }
+  int num = 50;
+  int count = 1;
+  int sum = 0;
+  for(count = 0; count <= num; count++){
+   sum = sum + count;
+ 
+  }
+    cout<< sum << endl;
+  
+    return 0;
+}
+#include <iostream>
+using namespace std;
+int main(){
+  int n = 15;
+  int i = 1;
+  int sum = 0;
+  while(i<=n){
+    sum = sum + i;
+    i++;
+  }
+  cout<< sum <<endl;
     return 0;
 }
