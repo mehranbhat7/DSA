@@ -205,12 +205,14 @@
 #include <iostream>
 using namespace std;
 int main(){
-  int n = 17;
-for(int i =1; i<= n; i++){
-  for(int i = 1; i<=n;i++){
-    cout << i;
+  int n = 15;
+  for(int i =0;i<n;i++){
+    char ch = 'A';
+    for(int j=0;j<n;j++){
+      cout << ch << " ";
+      ch++;
+    }
+    cout << endl;
   }
-cout<< endl;
-}
   return 0;
 }
