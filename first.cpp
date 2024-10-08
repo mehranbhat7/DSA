@@ -261,13 +261,28 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+// int n = 7;
+// for(int i = 0; i < n; i++){
+//   for(int j = i+1; j>0; j--){
+//     cout << j << " ";
+//   }
+//   cout << endl;
+// }
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main(){
-int n = 7;
+int n = 4;
+char num = 'a';
 for(int i = 0; i < n; i++){
-  for(int j = i+1; j>0; j--){
-    cout << j << " ";
+  for(int j=0; j< i+1;j++){
+    cout << num << " ";
+    num++;
   }
   cout << endl;
 }
