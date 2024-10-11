@@ -491,20 +491,36 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// bool prime(int n){
+//   for(int i =2; i <= n-1 ;i++){
+//     if(n % i == 0){
+//       return false;
+//     }
+//   }
+// return true;
+// }
+
+// int main(){
+ 
+// cout << prime(13) << endl;
+//   return 0;
+ 
+// }
+
+
 #include <iostream>
 using namespace std;
-bool prime(int n){
-  for(int i =2; i <= n-1 ;i++){
-    if(n % i == 0){
-      return false;
-    }
-  }
-return true;
+int fibonacci(int n){
+  if(n == 0) return 0;
+  if(n == 1) return 1;
+  return fibonacci(n-1) + fibonacci(n-2);
 }
 
 int main(){
  
-cout << prime(13) << endl;
+cout << fibonacci(22) << endl;
   return 0;
  
 }
