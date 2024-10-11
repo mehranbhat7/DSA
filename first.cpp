@@ -415,21 +415,41 @@
 //   }
  
 // }
+// #include <iostream>
+// using namespace std;
+// int name(int a, int b){
+//     cout << "Mehran\n";
+//     int sum = a-b;
+//     cout << sum << endl;
+//     return sum;
+// }
+// int main(){
+//   name(20,5);
+
+
+//   return 0;
+ 
+// }
+
+
 #include <iostream>
 using namespace std;
-int name(int a, int b){
-    cout << "Mehran\n";
-    int sum = a-b;
+int name(int n){
+    int sum =0;
+    for(int i =1; i<=n;i++){
+        sum = sum + i;
+    
+    }
     cout << sum << endl;
+
     return sum;
 }
 int main(){
-  name(20,5);
+ name(245);
 
 
   return 0;
  
 }
-
 
 
