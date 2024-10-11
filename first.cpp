@@ -432,12 +432,31 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int name(int n){
+//     int sum =0;
+//     for(int i =1; i<=n;i++){
+//         sum = sum + i;
+    
+//     }
+//     cout << sum << endl;
+
+//     return sum;
+// }
+// int main(){
+//  name(245);
+
+
+//   return 0;
+ 
+// }
 #include <iostream>
 using namespace std;
 int name(int n){
-    int sum =0;
+    int sum =1;
     for(int i =1; i<=n;i++){
-        sum = sum + i;
+        sum = sum * i;
     
     }
     cout << sum << endl;
@@ -445,7 +464,7 @@ int name(int n){
     return sum;
 }
 int main(){
- name(245);
+ name(7);
 
 
   return 0;
