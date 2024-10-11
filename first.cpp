@@ -451,24 +451,41 @@
 //   return 0;
  
 // }
+// #include <iostream>
+// using namespace std;
+// int name(int n){
+//     int sum =1;
+//     for(int i =1; i<=n;i++){
+//         sum = sum * i;
+    
+//     }
+//     cout << sum << endl;
+
+//     return sum;
+// }
+// int main(){
+//  name(7);
+
+
+//   return 0;
+ 
+// }
+
+
 #include <iostream>
 using namespace std;
-int name(int n){
-    int sum =1;
-    for(int i =1; i<=n;i++){
-        sum = sum * i;
+int name(int a, int b){
+   
+    int add =  10 + a +   10 +b;
+    cout << add << endl;
+    return 0;
     
-    }
-    cout << sum << endl;
-
-    return sum;
 }
 int main(){
- name(7);
-
+ int x= 10,p=5;
+ name(x,p);
+cout << x << endl;
 
   return 0;
  
 }
-
-
