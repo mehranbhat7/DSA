@@ -417,16 +417,16 @@
 // }
 #include <iostream>
 using namespace std;
-int name(){
+int name(int a, int b){
     cout << "Mehran\n";
-    return 0;
+    int sum = a-b;
+    cout << sum << endl;
+    return sum;
 }
 int main(){
-  name();
-  name();
-  name();
-  name();
-  name();
+  name(20,5);
+
+
   return 0;
  
 }
