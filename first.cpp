@@ -472,20 +472,39 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int name(int a, int b){
+   
+//     int add =  10 + a +   10 +b;
+//     cout << add << endl;
+//     return 0;
+    
+// }
+// int main(){
+//  int x= 10,p=5;
+//  name(x,p);
+// cout << x << endl;
+
+//   return 0;
+ 
+// }
+
+
 #include <iostream>
 using namespace std;
-int name(int a, int b){
-   
-    int add =  10 + a +   10 +b;
-    cout << add << endl;
-    return 0;
-    
+bool prime(int n){
+  for(int i =2; i <= n-1 ;i++){
+    if(n % i == 0){
+      return false;
+    }
+  }
+return true;
 }
-int main(){
- int x= 10,p=5;
- name(x,p);
-cout << x << endl;
 
+int main(){
+ 
+cout << prime(13) << endl;
   return 0;
  
 }
