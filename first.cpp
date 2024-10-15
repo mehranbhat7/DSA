@@ -510,17 +510,36 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int fibonacci(int n){
+//   if(n == 0) return 0;
+//   if(n == 1) return 1;
+//   return fibonacci(n-1) + fibonacci(n-2);
+// }
+
+// int main(){
+ 
+// cout << fibonacci(22) << endl;
+//   return 0;
+ 
+// }
+
+
 #include <iostream>
 using namespace std;
-int fibonacci(int n){
-  if(n == 0) return 0;
-  if(n == 1) return 1;
-  return fibonacci(n-1) + fibonacci(n-2);
+int Binary(int val){
+  int ans = 0, pow =1;
+  while(val > 0){
+    int remainder = val % 2;
+    val /= 2;
+    ans += pow * remainder;
+    pow *= 10;
+  }
+  return ans;
 }
 
 int main(){
- 
-cout << fibonacci(22) << endl;
+  cout << Binary(10) << endl;
   return 0;
- 
 }
