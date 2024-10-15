@@ -526,22 +526,40 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+// int Binary(int val){
+//   int ans = 0, pow =1;
+//   while(val > 0){
+//     int remainder = val % 2;
+//     val /= 2;
+//     ans += pow * remainder;
+//     pow *= 10;
+//   }
+//   return ans;
+// }
+
+// int main(){
+//   for(int i =2; i < 11 ; i++){
+//     cout << Binary(i) << endl;
+//   }
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int Binary(int val){
   int ans = 0, pow =1;
-  while(val > 0){
-    int remainder = val % 2;
-    val /= 2;
-    ans += pow * remainder;
-    pow *= 10;
-  }
+ while(val > 0){
+  int rem = val % 10;
+  ans += pow * rem;
+  pow = pow * 2;
+ }
   return ans;
 }
 
 int main(){
-  for(int i =2; i < 11 ; i++){
-    cout << Binary(i) << endl;
-  }
+  cout << Binary(10) << endl;
+  
   return 0;
 }
