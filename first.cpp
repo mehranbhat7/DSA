@@ -540,6 +540,8 @@ int Binary(int val){
 }
 
 int main(){
-  cout << Binary(10) << endl;
+  for(int i =2; i < 11 ; i++){
+    cout << Binary(i) << endl;
+  }
   return 0;
 }
