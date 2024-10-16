@@ -568,8 +568,8 @@
 using namespace std;
 
 int main(){
-  int a=10, b=2;
-  cout << (a << b) << endl;
+  int a=10, b=1;
+  cout << (a >> b) << endl;
   
   return 0;
 }
