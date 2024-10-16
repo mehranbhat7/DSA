@@ -546,20 +546,30 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int Binary(int val){
+//   int ans = 0, pow =1;
+//  while(val > 0){
+//   int rem = val % 10;
+//   ans += pow * rem;
+//   pow = pow * 2;
+//  }
+//   return ans;
+// }
+
+// int main(){
+//   cout << Binary(10) << endl;
+  
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
-int Binary(int val){
-  int ans = 0, pow =1;
- while(val > 0){
-  int rem = val % 10;
-  ans += pow * rem;
-  pow = pow * 2;
- }
-  return ans;
-}
 
 int main(){
-  cout << Binary(10) << endl;
+  int a=6, b=10;
+  cout << (a & b) << endl;
   
   return 0;
 }
