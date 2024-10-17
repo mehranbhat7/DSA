@@ -574,12 +574,27 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int marks[] = {38,23,86,54,73,53,87,94,23,56};
+//  int size = 10;
+//  for(int i =0; i < size; i++){
+//   cout << marks[i] << endl;
+//  }
+// }
+
 #include <iostream>
 using namespace std;
 int main(){
-  int marks[] = {38,23,86,54,73,53,87,94,23,56};
+  int marks[] = {38,23,8,86,54,73,53,87,94,23,56};
  int size = 10;
+ int smallest = INT_MIN;
  for(int i =0; i < size; i++){
-  cout << marks[i] << endl;
+  if(marks[i] > smallest){
+    smallest = marks[i];
+  }
  }
+ cout << "Smallest Mark: " << smallest << endl;
+  return 0;
 }
