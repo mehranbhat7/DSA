@@ -578,6 +578,8 @@
 using namespace std;
 int main(){
   int marks[] = {38,23,86,54,73,53,87,94,23,56};
-  marks[2] = 303;
-  cout << marks[2] << endl;
+ int size = 10;
+ for(int i =0; i < size; i++){
+  cout << marks[i] << endl;
+ }
 }
