@@ -564,12 +564,20 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//   int a=10, b=1;
+//   cout << (a >> b) << endl;
+  
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
-
 int main(){
-  int a=10, b=1;
-  cout << (a >> b) << endl;
-  
-  return 0;
+  int marks[] = {38,23,86,54,73,53,87,94,23,56};
+  marks[2] = 303;
+  cout << marks[2] << endl;
 }
