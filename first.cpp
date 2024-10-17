@@ -599,19 +599,40 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int marks[] = {38,23,8,86,54,73,53,87,94,23,56};
+//  int size = 10;
+//  int index;
+//  int smallest = INT_MAX;
+//  for(int i =0; i < size; i++){
+//   if(marks[i] < smallest){
+//     smallest = marks[i];
+//     index = i;
+//   }
+//  }
+//  cout << "Smallest Mark: " << smallest<< "index is: " << index << endl;
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
+
+void chanfge(int marks[], int size){
+  for(int i=0; i<size;i++){
+   marks[i]=  marks[i] + 2;
+  }
+}
 int main(){
   int marks[] = {38,23,8,86,54,73,53,87,94,23,56};
- int size = 10;
- int index;
- int smallest = INT_MAX;
- for(int i =0; i < size; i++){
-  if(marks[i] < smallest){
-    smallest = marks[i];
-    index = i;
+  int size = 10;
+ chanfge(marks,size);
+ cout << "Updated Marks: ";
+  for(int i = 0; i < size; i++){
+    cout << marks[i] << " ";
   }
- }
- cout << "Smallest Mark: " << smallest<< " index is: " << index << endl;
+  cout << endl;
+ 
   return 0;
 }
