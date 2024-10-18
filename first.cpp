@@ -616,23 +616,45 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// void chanfge(int marks[], int size){
+//   for(int i=0; i<size;i++){
+//    marks[i]=  marks[i] + 2;
+//   }
+// }
+// int main(){
+//   int marks[] = {38,23,8,86,54,73,53,87,94,23,56};
+//   int size = 10;
+//  chanfge(marks,size);
+//  cout << "Updated Marks: ";
+//   for(int i = 0; i < size; i++){
+//     cout << marks[i] << " ";
+//   }
+//   cout << endl;
+ 
+//   return 0;
+// }
+
+
+
 #include <iostream>
 using namespace std;
 
-void chanfge(int marks[], int size){
-  for(int i=0; i<size;i++){
-   marks[i]=  marks[i] + 2;
+int linear(int arr[], int size, int target){
+ for(int i =0;i<size; i++){
+  if(arr[i] == target){
+    return i; 
   }
+ }
+ return -1;
 }
+
 int main(){
-  int marks[] = {38,23,8,86,54,73,53,87,94,23,56};
-  int size = 10;
- chanfge(marks,size);
- cout << "Updated Marks: ";
-  for(int i = 0; i < size; i++){
-    cout << marks[i] << " ";
-  }
-  cout << endl;
- 
+  int arr[] = {0,1,2,3,4,5,6,7};
+  int size = 8;
+  int target = 17;
+  cout << linear(arr,size,target) << endl;
   return 0;
 }
