@@ -681,20 +681,54 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int reverseArr(int arr[], int size){
+// int prod = 1;
+// for(int i = 0; i< size ; i++){
+//   prod = prod * arr[i];
+// }
+// return prod;
+
+// }
+// int main(){
+//   int arr[] ={3,5,7,2,8,1};
+//   int size = 6;
+//  int total = reverseArr(arr, size) ;
+//  cout << total << endl;
+//   return 0;
+// }
+
 #include <iostream>
 using namespace std;
-int reverseArr(int arr[], int size){
-int prod = 1;
-for(int i = 0; i< size ; i++){
-  prod = prod * arr[i];
+void result(int arr[],int size){
+  int maxidx ;
+  int minidx;
+  int largest = INT_MIN;
+  int smallest = INT_MAX;
+  for(int i =0; i<size; i++){
+    if(arr[i] < smallest){
+      smallest = arr[i];
+      minidx = i;
+    }
+    if(arr[i] > largest){
+      largest = arr[i];
+      maxidx = i;
+  }
 }
-return prod;
+swap(arr[maxidx],arr[minidx]);
+}
 
-}
+
 int main(){
   int arr[] ={3,5,7,2,8,1};
   int size = 6;
- int total = reverseArr(arr, size) ;
- cout << total << endl;
+  result(arr, size);
+  for(int i =0; i< size ; i++){
+    cout << arr[i] << " ";
+  }
+  cout << endl;
+  
+ 
   return 0;
 }
