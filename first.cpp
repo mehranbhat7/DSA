@@ -735,19 +735,14 @@
 
 #include <iostream>
 using namespace std;
-// int ques(int a){
-//   return a * a;
-// }
 
 int main(){
-int n = 7;
-int sum = 0;
-for(int i=0; i<=n; i++){
-  if(i % 2 != 0){
-    sum = sum + i;
-  }
+int n = 4;
+int prod = 1;
+for(int i =1;i <= n; i++){
+  prod = prod * i;
 }
-cout << "Sum: " << sum << endl;
+cout << prod << endl;
 
 return 0;
 }
