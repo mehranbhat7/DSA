@@ -735,14 +735,12 @@
 
 #include <iostream>
 using namespace std;
+int sample(int a, int b){
+  return a+b;
+}
 
 int main(){
-int n = 4;
-int prod = 1;
-for(int i =1;i <= n; i++){
-  prod = prod * i;
-}
-cout << prod << endl;
-
+cout << sample(10,6) << endl;
+cout << sample(10,2) << endl;
 return 0;
 }
