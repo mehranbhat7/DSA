@@ -735,12 +735,20 @@
 
 #include <iostream>
 using namespace std;
-int sample(int a, int b){
-  return a+b;
+int sample(int a){
+  if(a==0) return 0;
+  if(a==1) return 1;
+  return sample(a-1) + sample(a-2);
+
 }
 
 int main(){
-cout << sample(10,6) << endl;
-cout << sample(10,2) << endl;
+  cout << sample(10) << endl;
+
+  
+  
+
+
+
 return 0;
 }
