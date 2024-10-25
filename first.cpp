@@ -733,22 +733,41 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int sample(int a){
+//   if(a==0) return 0;
+//   if(a==1) return 1;
+//   return sample(a-1) + sample(a-2);
+
+// }
+
+// int main(){
+//   cout << sample(10) << endl;
+
+  
+  
+
+
+
+// return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
-int sample(int a){
-  if(a==0) return 0;
-  if(a==1) return 1;
-  return sample(a-1) + sample(a-2);
-
-}
-
 int main(){
-  cout << sample(10) << endl;
-
-  
-  
-
-
-
-return 0;
+  int arr[] = {3,6,9,2,7,5};
+  int size = 6;
+ 
+  int small = INT_MIN;
+  for(int i =0; i < size; i++){
+   if(arr[i] > small){
+    small = arr[i];
+    ind = i;
+   }
+  }
+  cout << small << endl;
+  cout << ind << endl;
+  return 0;
 }
