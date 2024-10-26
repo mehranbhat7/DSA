@@ -773,10 +773,14 @@
 #include <vector>
 using namespace std;
 int main(){
- vector<int> arr = {1,2,3,4,5,6,7,8};
- for(int val : arr){
-   cout << val << endl;
+ vector<int> arr= {2,7,45,9,22,13,78,1};
+ arr.push_back(23);
+ arr.push_back(24);
+ arr.push_back(25);
+ arr.push_back(26);
+ cout << " size of array is : " << arr.size() << endl;
+ for(int a : arr){
+  cout << a << endl;
  }
-  
   return 0;
 }
