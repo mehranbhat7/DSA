@@ -779,8 +779,11 @@ int main(){
  arr.push_back(25);
  arr.push_back(26);
  cout << " size of array is : " << arr.size() << endl;
+ arr.pop_back();
+ cout << " size of array is : " << arr.size() << endl;
  for(int a : arr){
   cout << a << endl;
  }
+ cout << arr.back() << endl;
   return 0;
 }
