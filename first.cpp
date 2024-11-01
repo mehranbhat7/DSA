@@ -769,21 +769,35 @@
 // }
 
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+// int main(){
+//  vector<int> arr= {2,7,45,9,22,13,78,1};
+//  arr.push_back(23);
+//  arr.push_back(24);
+//  arr.push_back(25);
+//  arr.push_back(26);
+//  cout << " size of array is : " << arr.size() << endl;
+//  arr.pop_back();
+//  cout << " size of array is : " << arr.size() << endl;
+//  for(int a : arr){
+//   cout << a << endl;
+//  }
+//  cout << arr.at(1) << endl;
+//   return 0;
+// }
+
+
 #include <iostream>
-#include <vector>
 using namespace std;
 int main(){
- vector<int> arr= {2,7,45,9,22,13,78,1};
- arr.push_back(23);
- arr.push_back(24);
- arr.push_back(25);
- arr.push_back(26);
- cout << " size of array is : " << arr.size() << endl;
- arr.pop_back();
- cout << " size of array is : " << arr.size() << endl;
- for(int a : arr){
-  cout << a << endl;
- }
- cout << arr.back() << endl;
+  int n = 5;
+  for(int i =0; i <n ;i++){
+    for(int j =0; j< i +1; j++){
+      cout << "* " << " ";
+    }
+    cout << endl;
+  }
   return 0;
 }
