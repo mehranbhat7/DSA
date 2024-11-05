@@ -793,13 +793,16 @@
 #include <vector>
 using namespace std;
 int main(){
-  vector <int> arr = {4,1,2,9,4,1,2};
-  int ans = 0;
-  for(int val : arr){
-    ans = ans ^ val;
+ int arr[] = {1,2,3,4,5};
+ int n = 5;
+  for(int st = 0; st< n; st++){
+    for(int end = st; end < n; end++){
+      for(int i = st; i <=end; i++)
+      cout << arr[i] << " ";
+    }
+    cout << " ";
   }
-  cout << "unique element is: " << ans << endl;
-  
+  cout << endl;
 
   return 0;
 }
