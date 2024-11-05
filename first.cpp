@@ -814,15 +814,15 @@ int main(){
  int arr[] = {3,-4,5,4,-1,7,-8};
  int n = 7;
  int maxSum = INT_MIN;
-  for(int st = 0; st< n; st++){
-    int sum = 0;
-    for(int end = st; end < n; end++){
-      sum = sum + arr[end];
-      maxSum = max(sum , maxSum);
-    }
-  
+ int sum = 0;
+  for(int val : arr){
+    sum = sum + val;
+    maxSum = max(sum, maxSum);
+  }if(sum < 0){
+    sum = 0;
   }
-  cout << "Maximum Sum: " << maxSum << endl;
+  cout << "Maximum sum of contiguous subarray is " << maxSum << endl;
+  return 0;
 
   
  
