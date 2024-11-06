@@ -807,25 +807,5 @@
 //   return 0;
 // }
 
-#include <iostream>
-#include <vector>
-using namespace std;
-int main(){
- int arr[] = {3,-4,5,4,-1,7,-8};
- int n = 7;
- int maxSum = INT_MIN;
- int sum = 0;
-  for(int val : arr){
-    sum = sum + val;
-    maxSum = max(sum, maxSum);
-  }if(sum < 0){
-    sum = 0;
-  }
-  cout << "Maximum sum of contiguous subarray is " << maxSum << endl;
-  return 0;
 
-  
- 
 
-  return 0;
-}
