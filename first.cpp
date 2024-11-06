@@ -809,3 +809,25 @@
 
 
 
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+  int arr[] = {2,5,7,3,1,9};
+  int n = 6;
+ vector<int> ans;
+  int target = 8;
+
+  for(int i =0; i< n ; i++){
+    for(int j =i+1; j< n; j++){
+      if(arr[i] + arr[j] == target){
+        ans.push_back(arr[i]);
+        ans.push_back(arr[j]);
+       cout << "Pair found: " << arr[i] << ", " << arr[j] << endl;
+        return 0;
+      }
+    }
+  }
+  cout << "No pair found that sums to " << target << endl;
+  return 0;
+}
