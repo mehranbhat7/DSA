@@ -833,30 +833,23 @@
 // }
 
 #include <iostream>
-#include <algorithm>
 using namespace std;
 int main(){
-  int arr[] = {1,3,3,1,2,1,3,2,3};
-  int n = 9;
- int  repetive = arr[0];
-  int freq = 1;
-  int macfreq = n/2;
-  sort(arr.begin(), arr.end());
-
-  for(int i = 1; i< n; i++){
-    if(arr[i] == repetive){
+  int arr[] = {1,3,3,1,2,1,3,2,3,1,1,1};
+  int n = 12;
+  int freq = 0;
+  int majNo = 0;
+  for(int i = 0; i< n; i++){
+    if(freq == 0){
+      majNo = arr[i];
+      
+    }
+    if(majNo == arr[i]){
       freq++;
-   }else{
-    freq = 1;
-    repetive = arr[i];
-   }
-   
-   
+    }else{
+      freq--;
+    }
   }
-  if(freq > macfreq){
-    cout << "Repetitive element: " << repetive << " Frequency: " << freq << endl;
-  }else{
-    cout << "No repetitive element found" << endl;
-  }
+  cout << majNo << " " << endl;
   return 0;
 }
