@@ -833,23 +833,30 @@
 // }
 
 #include <iostream>
-#include <vector>
+#include <algorithm>
 using namespace std;
 int main(){
- int arr[] = {5,7,3,9,2,6};
- int n = 6;
- int i = 0, j = n-1;
- int target = 16;
- while(i< j){
-  int sum = arr[i] + arr[j];
-  if(sum > target){
-    j--;
-  }else if(sum < target ){
-    i++;
-  }else{
-    cout << "Pair found: " << arr[i] << ", " << arr[j] << endl;
-    
+  int arr[] = {1,3,3,1,2,1,3,2,3};
+  int n = 9;
+ int  repetive = arr[0];
+  int freq = 1;
+  int macfreq = n/2;
+  sort(arr.begin(), arr.end());
+
+  for(int i = 1; i< n; i++){
+    if(arr[i] == repetive){
+      freq++;
+   }else{
+    freq = 1;
+    repetive = arr[i];
+   }
+   
+   
   }
- }
+  if(freq > macfreq){
+    cout << "Repetitive element: " << repetive << " Frequency: " << freq << endl;
+  }else{
+    cout << "No repetitive element found" << endl;
+  }
   return 0;
 }
