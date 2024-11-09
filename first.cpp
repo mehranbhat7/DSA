@@ -832,24 +832,38 @@
 //   return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int arr[] = {1,3,3,1,2,1,3,2,3,1,1,1};
+//   int n = 12;
+//   int freq = 0;
+//   int majNo = 0;
+//   for(int i = 0; i< n; i++){
+//     if(freq == 0){
+//       majNo = arr[i];
+      
+//     }
+//     if(majNo == arr[i]){
+//       freq++;
+//     }else{
+//       freq--;
+//     }
+//   }
+//   cout << majNo << " " << endl;
+//   return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 int main(){
-  int arr[] = {1,3,3,1,2,1,3,2,3,1,1,1};
-  int n = 12;
-  int freq = 0;
-  int majNo = 0;
-  for(int i = 0; i< n; i++){
-    if(freq == 0){
-      majNo = arr[i];
-      
-    }
-    if(majNo == arr[i]){
-      freq++;
-    }else{
-      freq--;
-    }
-  }
-  cout << majNo << " " << endl;
+  int arr[] = {2,3,1,5,7};
+  int n = 5;
+  int sum = 0;
+  for(int i = 0; i< n;i++){
+    sum = sum + arr[i];
+}
+  cout << sum << endl;
   return 0;
 }
