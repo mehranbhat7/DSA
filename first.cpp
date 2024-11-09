@@ -872,8 +872,11 @@
 using namespace std;
 int main(){
   int arr[] = {2,3,1,5,7};
-  int n = 5;
-int lastIdx = arr[0];
-cout << lastIdx << endl;
+int n = 5;
+int factorial = 1;
+ for (int i = 0; i < n ; i++){
+  factorial = factorial * arr[i];
+ }
+ cout << "Factorial: " << factorial << endl;
   return 0;
 }
