@@ -871,12 +871,14 @@
 #include <iostream>
 using namespace std;
 int main(){
-  int arr[] = {2,3,1,5,7};
-int n = 5;
-int factorial = 1;
- for (int i = 0; i < n ; i++){
-  factorial = factorial * arr[i];
+ int n = 12;
+ for(int i > 2 ; i <=n ; i++){
+  if(n % i == 0){
+    cout << "not prime" << "";
+  }
+  else{
+    cout << "prime" << "";
+  }
  }
- cout << "Factorial: " << factorial << endl;
   return 0;
 }
