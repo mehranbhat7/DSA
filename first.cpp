@@ -877,7 +877,7 @@ int main(){
     cout << "not prime" << "";
   }
   else{
-    cout << "prime" << "";
+    cout << "Prime" << "";
   }
  }
   return 0;
