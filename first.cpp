@@ -889,7 +889,7 @@
 using namespace std;
 
 int main(){
-  int arr[] = {7,1,5,3,6,4};
+  int arr[] = {2,1,5,9,6,4};
   int n = 6;
   int maxProfit = 0;
   int bestBuy = arr[0];
