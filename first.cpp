@@ -884,23 +884,47 @@
 // }
 
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main(){
+//   int arr[] = {2,1,5,9,6,4};
+//   int n = 6;
+//   int maxProfit = 0;
+//   int bestBuy = arr[0];
+//   for(int i = 1; i < n; i++){
+//     if(arr[i]> bestBuy){
+//       maxProfit = max(maxProfit, arr[i ]- bestBuy);
+//     }
+//     bestBuy = min(bestBuy, arr[i]);
+//   }
+// cout << "max profit " << maxProfit << endl;
+// cout << "best buy " << bestBuy << endl;
+
+//   return 0;
+// }
+
+
 #include <iostream>
 #include <vector>
+// #include <algorithm>
 using namespace std;
 
 int main(){
-  int arr[] = {2,1,5,9,6,4};
-  int n = 6;
-  int maxProfit = 0;
-  int bestBuy = arr[0];
-  for(int i = 1; i < n; i++){
-    if(arr[i]> bestBuy){
-      maxProfit = max(maxProfit, arr[i ]- bestBuy);
-    }
-    bestBuy = min(bestBuy, arr[i]);
+  int height[] = {1,8,6,2,5,4,8,3,7};
+  int n = 9;
+ int maxWater = 0;
+ for(int i =0; i < n; i++){
+  for(int j = i+1; j< n ; j++){
+    int width = j-i;
+    int ht = min(height[i],height[j]);
+    int water = width * ht;
+    maxWater = max(maxWater,water);
   }
-cout << "max profit " << maxProfit << endl;
-cout << "best buy " << bestBuy << endl;
+ 
+ }
+ cout << maxWater << endl;
 
   return 0;
 }
