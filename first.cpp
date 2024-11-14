@@ -906,25 +906,47 @@
 // }
 
 
+// #include <iostream>
+// #include <vector>
+// // #include <algorithm>
+// using namespace std;
+
+// int main(){
+//   int height[] = {1,8,6,2,5,4,8,3,7};
+//   int n = 9;
+//  int maxWater = 0;
+//  for(int i =0; i < n; i++){
+//   for(int j = i+1; j< n ; j++){
+//     int width = j-i;
+//     int ht = min(height[i],height[j]);
+//     int water = width * ht;
+//     maxWater = max(maxWater,water);
+//   }
+ 
+//  }
+//  cout << maxWater << endl;
+
+//   return 0;
+// }
 #include <iostream>
 #include <vector>
-// #include <algorithm>
+
 using namespace std;
 
 int main(){
   int height[] = {1,8,6,2,5,4,8,3,7};
   int n = 9;
  int maxWater = 0;
- for(int i =0; i < n; i++){
-  for(int j = i+1; j< n ; j++){
-    int width = j-i;
-    int ht = min(height[i],height[j]);
-    int water = width * ht;
-    maxWater = max(maxWater,water);
-  }
- 
- }
- cout << maxWater << endl;
+int lp = 0;
+int rp=n-1;
+while(lp<rp){
+  int width = rp-lp;
+  int ht = min(height[lp],height[rp]);
+  int current = width * ht;
+  maxWater = max(maxWater,current);
+  height[lp] < height[rp]? lp++ : rp--;
+}
+cout << maxWater << endl;
 
   return 0;
 }
