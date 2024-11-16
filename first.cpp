@@ -928,25 +928,50 @@
 
 //   return 0;
 // }
-#include <iostream>
-#include <vector>
+// #include <iostream>
+// #include <vector>
 
+// using namespace std;
+
+// int main(){
+//   int height[] = {1,8,6,2,5,4,8,3,7};
+//   int n = 9;
+//  int maxWater = 0;
+// int lp = 0;
+// int rp=n-1;
+// while(lp<rp){
+//   int width = rp-lp;
+//   int ht = min(height[lp],height[rp]);
+//   int current = width * ht;
+//   maxWater = max(maxWater,current);
+//   height[lp] < height[rp]? lp++ : rp--;
+// }
+// cout << maxWater << endl;
+
+//   return 0;
+// }
+#include <iostream>
 using namespace std;
 
-int main(){
-  int height[] = {1,8,6,2,5,4,8,3,7};
-  int n = 9;
- int maxWater = 0;
-int lp = 0;
-int rp=n-1;
-while(lp<rp){
-  int width = rp-lp;
-  int ht = min(height[lp],height[rp]);
-  int current = width * ht;
-  maxWater = max(maxWater,current);
-  height[lp] < height[rp]? lp++ : rp--;
-}
-cout << maxWater << endl;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    int n = 4;
+    int ans[4];
 
-  return 0;
+    for (int i = 0; i < n; i++) {
+        ans[i] = 1; // Initialize ans[i] to 1
+        for (int j = 0; j < n; j++) {
+            if (i != j) {
+                ans[i] = ans[i] * arr[j]; // Multiply all elements except arr[i]
+            }
+        }
+    }
+
+    // Print the results
+    for (int i = 0; i < n; i++) {
+        cout << "Index " << i << ": " << ans[i] << " ";
+    }
+
+    cout << endl; // For better readability
+    return 0;
 }
